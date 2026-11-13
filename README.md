@@ -1,3 +1,4 @@
+```python
 import pyarrow as pa
 
 def write_for_dai(X, path):
@@ -20,3 +21,4 @@ table.to_csv(C.EXP_DIR / "dai_columns_upsell.csv", index=False)
 for p in (out_train, out_test, out_sample):
     print(f"{p}  {p.stat().st_size / 1e9:.2f} GB")
 print("column list with sources:", C.EXP_DIR / "dai_columns_upsell.csv")
+```
